@@ -8,7 +8,7 @@ API Facade for ClickSend REST v3.
 
 #### Show
 
-```
+```elixir
 ClickSend.Account.show()
 ```
 
@@ -16,13 +16,13 @@ ClickSend.Account.show()
 
 #### List Packages
 
-```
+```elixir
 ClickSend.AccountRecharge.list_packages("USA")
 ```
 
 #### Purchase a Package
 
-```
+```elixir
 ClickSend.AccountRecharge.purchase_package(1)
 ```
 
@@ -30,7 +30,7 @@ ClickSend.AccountRecharge.purchase_package(1)
 
 #### Send
 
-```
+```elixir
 ClickSend.EmailMessage.new(
   "test1@test.com",
   "John Doe",
@@ -46,7 +46,7 @@ ClickSend.EmailMessage.new(
 
 #### Send
 
-```
+```elixir
 ClickSend.SmsMessage.new("+14055555555", "Hello world!")
 |> ClickSend.Sms.send()
 ```
@@ -65,7 +65,7 @@ end
 
 1. Setup your configuration
 
-```
+```elixir
 config :click_send,
   api_key: "F0E14CF8-1691-11E9-9019-C48E8FF5E241",
   username: "my_username",
