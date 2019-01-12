@@ -2,11 +2,12 @@ defmodule ClickSend.Mixfile do
   use Mix.Project
 
   @project_url "https://github.com/midas/click_send"
+  @version     "0.1.0"
 
   def project do
     [
       app: :click_send,
-      version: "0.1.0",
+      version: @version,
       source_url: @project_url,
       homepage_url: @project_url,
       elixir: "~> 1.5",
@@ -51,7 +52,7 @@ defmodule ClickSend.Mixfile do
       licenses: ["MIT"],
       links: %{
         "GitHub" => @project_url,
-        "Docs" => "https://hexdocs.pm/click_send/0.1.0"
+        "Docs" => "https://hexdocs.pm/click_send/#{@version}"
       }
     ]
   end
