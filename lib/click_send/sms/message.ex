@@ -12,7 +12,7 @@ defmodule ClickSend.SmsMessage do
 
   def new(to, body) do
     %__MODULE__{
-      body: body,
+      body: ClickSend.MessageFormatter.call(body),
       to: to
     }
   end

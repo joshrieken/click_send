@@ -9,7 +9,7 @@ defmodule ClickSend.EmailMessage do
 
   def new(tos, from_id, from_name, subject, body) do
     %__MODULE__{
-      body: body,
+      body: ClickSend.MessageFormatter.call(body),
       from: ClickSend.EmailFrom.new(from_id, from_name),
       subject: subject,
       to: build_tos(tos)
