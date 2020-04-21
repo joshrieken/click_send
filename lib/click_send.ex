@@ -4,7 +4,7 @@ defmodule ClickSend do
 
   def process_url(url), do: "https://rest.clicksend.com/v3" <> url
 
-  defp process_request_headers(headers) do
+  def process_request_headers(headers) do
     [
       {"Accepts",       "application/json"},
       {"Content-type",  "application/json"},
