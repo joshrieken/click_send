@@ -58,7 +58,7 @@ ClickSend.SmsMessage.new("+14055555555", "Hello world!")
 ```elixir
 def deps do
   [
-    {:click_send, "~> 0.3.0"}
+    {:click_send, "~> 0.5.0"}
   ]
 end
 ```
