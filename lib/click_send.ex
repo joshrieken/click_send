@@ -1,6 +1,25 @@
 defmodule ClickSend do
 
-  use HTTPoison.Base
+  def get(url, body \\ nil, headers \\ []) do
+    url = process_url(url)
+    headers = process_request_headers(headers)
+
+    Req.get(url, body: body, headers: headers)
+  end
+
+  def post(url, body \\ nil, headers \\ []) do
+    url = process_url(url)
+    headers = process_request_headers(headers)
+
+    Req.post(url, body: body, headers: headers)
+  end
+
+  def put(url, body \\ nil, headers \\ []) do
+    url = process_url(url)
+    headers = process_request_headers(headers)
+
+    Req.put(url, body: body, headers: headers)
+  end
 
   def process_url(url), do: "https://rest.clicksend.com/v3" <> url
 
