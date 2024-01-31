@@ -2,7 +2,7 @@ defmodule ClickSend.Mixfile do
   use Mix.Project
 
   @project_url "https://github.com/midas/click_send"
-  @version     "0.5.1"
+  @version     "0.6.0"
 
   def project do
     [
